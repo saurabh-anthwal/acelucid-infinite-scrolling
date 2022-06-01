@@ -1,0 +1,52 @@
+.mainBox{
+    width: 95%;margin: 0 auto;
+}
+.tableData td{
+font-size: 15px;
+}
+.tableData td a{font-size: 12px;}
+.subData p{
+    font-size: 12px;margin: 0;color: rgb(14, 13, 13);
+}
+
+.Reviewers img{ 
+    height: 40px;
+    margin-top: 5px;
+}
+
+
+@media only screen and (max-width: 760px) {
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+        }
+        thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+        td { 
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+            padding-left: 50%; 
+       }
+       .tableData td{padding-left: 8rem}
+       td:before { 
+        position: absolute;
+        top: 6px;
+        left: 5px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+                    font-weight: bold;
+    }
+        td:nth-of-type(1):before { content: "Id"; }
+        td:nth-of-type(2):before { content: "Title"; }
+        td:nth-of-type(3):before { content: "Base Branch"; }
+        td:nth-of-type(4):before { content: "Author Branch" }
+        td:nth-of-type(5):before { content: "Author"; }
+        td:nth-of-type(6):before { content: "Created On"; }
+        td:nth-of-type(7):before { content: "Reviewers"; }
+        td:nth-of-type(8):before { content: "Labels"; }
+  
+    }
